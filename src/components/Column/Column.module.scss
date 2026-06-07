@@ -1,0 +1,18 @@
+@import "../../styles/settings.scss";
+
+.column {
+  width: 30%;
+  background: $color-light;
+  padding: ($base-size * 1.5);
+  border-radius: $radius;
+  color: $color-dark;
+}
+
+.title {
+  text-align: center;
+  font-size: ($base-size * 1.5);
+}
+.icon::before {
+  padding-right: $base-size;
+  color: $color-warning;
+}

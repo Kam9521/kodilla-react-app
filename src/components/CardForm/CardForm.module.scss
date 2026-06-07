@@ -1,0 +1,9 @@
+@import "../../styles/settings.scss";
+
+.cardForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: $base-size;
+}

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTasks } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import Container from "../Container/Container";
 import styles from "./NavBar.module.scss";
@@ -15,15 +15,36 @@ const NavBar = () => {
 
         <ul className={styles.links}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? styles.linkActive : undefined
+              }
+            >
+              Home
+            </NavLink>
           </li>
 
           <li>
-            <Link to="/favorite">Favorite</Link>
+            <NavLink
+              to="/favorite"
+              className={({ isActive }) =>
+                isActive ? styles.linkActive : undefined
+              }
+            >
+              Favorite
+            </NavLink>
           </li>
 
           <li>
-            <Link to="/about">About</Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? styles.linkActive : undefined
+              }
+            >
+              About
+            </NavLink>
           </li>
         </ul>
       </Container>

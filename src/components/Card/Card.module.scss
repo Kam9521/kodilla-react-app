@@ -17,3 +17,11 @@
 .favoriteActive {
   color: $color-warning;
 }
+.remove {
+  float: right;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: $color-warning;
+  margin-right: 10px;
+}

@@ -15,7 +15,7 @@ const Column = (props) => {
       </h3>
 
       {cards.map((card) => (
-        <Card key={card.id}>{card.title}</Card>
+        <Card key={card.id} {...card} />
       ))}
 
       <CardForm columnId={props.id} />

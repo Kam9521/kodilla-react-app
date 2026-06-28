@@ -6,3 +6,14 @@
   padding: $base-size;
   margin: 0 0 $base-size 0;
 }
+.favorite {
+  float: right;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: $color-dark;
+}
+
+.favoriteActive {
+  color: $color-warning;
+}

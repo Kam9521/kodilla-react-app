@@ -14,7 +14,9 @@ const Card = ({ id, title, isFavorite }) => {
   };
 
   const handleRemoveClick = () => {
-    dispatch(removeCard(id));
+    if (window.confirm("Are you sure you want to delete this card?")) {
+      dispatch(removeCard(id));
+    }
   };
 
   return (
